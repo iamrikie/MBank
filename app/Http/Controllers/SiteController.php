@@ -15,11 +15,6 @@ class SiteController extends Controller
     {
         return view('site.about');
     }
-	
-	public function contactus()
-    {
-        return view('site.services');
-    }
 
     public function contactus()
     {
@@ -29,5 +24,16 @@ class SiteController extends Controller
     public function site()
     {
         return view('layouts.site');
+    }
+
+
+    public function header()
+    {
+        return view('layouts.header');
+    }
+
+    public function footer()
+    {
+        return view('layouts.footer');
     }
 }
