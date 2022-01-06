@@ -10,13 +10,17 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    const ADMIN = 'RANK1';
+    const DOCTOR = 'RANK2';
+    /*const PATIENT = 'RANK3';*/
+	
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+	use Notifiable;
 	
     protected $guarded = [];
 
